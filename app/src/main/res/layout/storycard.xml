@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="8dp"
+    android:stateListAnimator="@anim/lift_up"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:layout_marginBottom="5dp">
+
+
+    <ImageView
+        android:id="@+id/story_image"
+        android:transitionName="tImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/mainHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/placeNameHolder"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:transitionName="tNameHolder"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/story_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

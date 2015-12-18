@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.chihiong.bedtimestories.StoryDetailActivity"
+    tools:showIn="@layout/activity_story_detail">
+
+<LinearLayout
+    android:id="@+id/sounds_content_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/placeNameHolder"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimaryDark"
+            android:transitionName="tNameHolder">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/story_header"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn_add"-->
+            <!--android:layout_width="@dimen/floating_button_size"-->
+            <!--android:layout_height="@dimen/floating_button_size"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="28dp"-->
+            <!--android:src="@android:drawable/ic_input_add"-->
+            <!--android:elevation="@dimen/button_elevation"-->
+            <!--android:background="@drawable/btn_background"-->
+            <!--android:contentDescription="@null" />-->
+
+    </FrameLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="SOUNDS LIST"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:textColor="@android:color/white" />-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="paragraph"
+        android:id="@+id/story_paragraph"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:minHeight="200dp"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/start"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/start" />-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
